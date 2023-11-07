@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Unspoken Love</title>
+</head>
+<body>
+    <p id="secretPhrase" style="display: none;">Secret Phrase: "I love you more than words can say."</p>
+
+    <script>
+        function revealSecretPhrase() {
+            var name = document.getElementById('nameInput').value;
+            if (name === "Avni") {
+                document.getElementById('secretPhrase').style.display = "block";
+            } else {
+                alert("Sorry, this message is not for you.");
+            }
+        }
+    </script>
+
+    <p>Please enter your name to reveal the secret phrase:</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button type="button" onclick="revealSecretPhrase()">Submit</button>
+</body>
+</html>
